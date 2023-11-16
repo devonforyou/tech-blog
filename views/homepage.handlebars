@@ -1,0 +1,11 @@
+<div class="create-search-section">
+   {{> search-bar}}
+</div>
+
+{{> no-results-found}}
+
+{{#if homepagePosts}}
+{{> homepage-posts}}
+{{else}}
+{{> no-posts-found}}
+{{/if}}
