@@ -1,0 +1,104 @@
+<!-- Modal -->
+  {{! Provide by https://codyhouse.co/gem/loginsignup-modal-window/ }}
+  <div class="body-modal cd-signin-modal js-signin-modal fade">
+    <!-- this is the entire modal form, including the background -->
+    <div class="cd-signin-modal__container">
+      <!-- this is the container wrapper -->
+      <ul class="cd-signin-modal__switcher js-signin-modal-switcher js-signin-modal-trigger"
+        style="list-style-type: none">
+        <li><a href="#0" data-signin="login" data-type="login">Sign in</a></li>
+        <li><a href="#0" data-signin="signup" data-type="signup">New account</a></li>
+      </ul>
+
+      <div class="cd-signin-modal__block js-signin-modal-block" data-type="login">
+        <!-- log in form -->
+        <form class="cd-signin-modal__form">
+          <p class="cd-signin-modal__fieldset">
+            <label class="cd-signin-modal__label cd-signin-modal__label--username cd-signin-modal__label--image-replace"
+              for="signup-username">Username</label>
+            <input
+              class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border signup-input"
+              id="signin-username" type="text" placeholder="Username" minlength="3" maxlength="20" />
+            <span class="cd-signin-modal__error username-validation">The
+              username must be alphanumeric and have 3-20 characters!</span>
+            <span class="cd-signin-modal__error username-error-422">The
+              username is already taken. Please choose a different username.</span>
+          </p>
+
+          <p class="cd-signin-modal__fieldset">
+            <label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace"
+              for="signin-password">Password</label>
+            <input
+              class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border login-input"
+              id="signin-password" type="password" placeholder="Password" autocomplete="off" />
+            <a href="#0" class="cd-signin-modal__hide-password js-hide-password">Show</a>
+            <span class="cd-signin-modal__error error-404">The email or
+              password provided is incorrect. Please try again.
+            </span>
+            <span class="cd-signin-modal__error error-500">We apologize for
+              the inconvenience. We have encountered an issue on our end, but
+              rest assured that we are actively working to resolve it. We
+              appreciate your understanding.
+            </span>
+            <span class="cd-signin-modal__error login-short-password">Password
+              should be 8-128 characters long and contain alphanumeric,
+              uppercase and special characters!
+            </span>
+          </p>
+
+          <p class="cd-signin-modal__fieldset">
+            <input id="login-btn" class="cd-signin-modal__input cd-signin-modal__input--full-width" type="submit"
+              value="Login" />
+          </p>
+        </form>
+      </div>
+      <!-- cd-signin-modal__block -->
+
+      <div class="cd-signin-modal__block js-signin-modal-block" data-type="signup">
+        <!-- sign up form -->
+        <form class="cd-signin-modal__form">
+          <p class="cd-signin-modal__fieldset">
+            <label class="cd-signin-modal__label cd-signin-modal__label--username cd-signin-modal__label--image-replace"
+              for="signup-username">Username</label>
+            <input
+              class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border signup-input"
+              id="signup-username" type="text" placeholder="Username" minlength="3" maxlength="20" />
+            <span class="cd-signin-modal__error username-validation">The
+              username must be alphanumeric and have 3-20 characters!</span>
+            <span class="cd-signin-modal__error username-error-422">The
+              username is already taken. Please choose a different username.</span>
+          </p>
+
+          <p class="cd-signin-modal__fieldset">
+            <label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace"
+              for="signup-password">Password</label>
+            <input
+              class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border signup-input"
+              id="signup-password" type="text" placeholder="Password" autocomplete="off" />
+            <a href="#0" class="cd-signin-modal__hide-password js-hide-password">Hide</a>
+            <span class="cd-signin-modal__error password-validation">Password
+              should be 8-128 characters long and contain alphanumeric,
+              uppercase and special characters!</span>
+            <span class="cd-signin-modal__error error-500">We apologize for
+              the inconvenience. We have encountered an issue on our end, but
+              rest assured that we are actively working to resolve it. We
+              appreciate your understanding.</span>
+          </p>
+
+          <p class="cd-signin-modal__fieldset">
+            <input
+              class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding btn btn-primary"
+              id="signup-btn" type="submit" value="Create account" disabled />
+          </p>
+        </form>
+      </div>
+      <!-- cd-signin-modal__block -->
+
+      <div class="cd-signin-modal__block js-signin-modal-block" data-type="reset">
+      </div>
+      <!-- cd-signin-modal__block -->
+      <a href="#0" class="cd-signin-modal__close js-close">Close</a>
+    </div>
+    <!-- cd-signin-modal__container -->
+  </div>
+  <!-- cd-signin-modal -->

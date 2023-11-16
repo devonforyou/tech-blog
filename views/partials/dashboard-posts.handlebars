@@ -1,0 +1,86 @@
+{{#each myPosts}}
+<div class="post" data-postid="{{postId}}">
+  <!-- CONTAINS CARD -->
+  <div class="card-container">
+    <div class="card card-post-color">
+      <form class="card-body was-validated">
+        <div class="card-top-section">
+          <!-- DISPLAY POST TITLE -->
+          <input type="text" class="card-title" placeholder="Enter Title" aria-label="Post Title"
+            value="{{postTitle}}" />
+          <div class="valid-feedback" style="display: none;">
+            Great!
+          </div>
+          <div class="invalid-feedback" style="display: none;">
+            Please enter a title.
+          </div>
+          <!-- Actions should have confirmation required -->
+          <div class="card-icon-section">
+            <!-- PROFILE ICON / navigates to edit_profile.handlebars -->
+            <i class="bi bi-pencil card-icon"></i>
+            <!-- TRASH ICON / makes DELETE request to server for this post -->
+            <i class="bi bi-trash card-icon"></i>
+          </div>
+        </div>
+        <!-- CARD TEXT -->
+        <textarea class="card-text form-control" placeholder="Enter Text" aria-label="Post Body Text"
+          required>{{postDescription}}</textarea>
+        <div class="changes-btn-container">
+          <button type="button" class="btn btn-primary save-btn">
+            Save Changes
+          </button>
+          <button type="button" class="btn btn-outline-danger discard-btn">
+            Discard Changes
+          </button>
+        </div>
+
+      </form>
+
+      <div class="comment-section" style="display:none">
+        <div class="comment-list">
+
+          {{#if postComments}}
+          {{! Add each comment }}
+          {{#each postComments}}
+
+          <div class="comment">
+            {{!-- Add the text from homepagePosts.postComments --}}
+            <div class="comment-text">"{{commentText}}"</div>
+            {{!-- Add the username from homepagePosts.postComments --}}
+            <div class="comment-username">- {{commentUsername}}</div>
+                      <div class="comment-date">{{commentDate}} </div>
+          </div>
+          {{/each}}
+          {{else}}
+          <p class="card card-body no-comment-message comment">
+            No comments yet!
+          </p>
+          {{/if}}
+        </div>
+
+        <div class="comment-text-area" width="80%" style="margin=auto">
+          <textarea class="form-control comment-text-form" rows="3" placeholder="Add a comment"
+            minlength="4"></textarea>
+          {{#if ../user.isLoggedIn}}
+          <button type="button" class="btn card-btn add-comment-btn btn-info">
+            Add Comment
+          </button>
+          {{else}}
+          <span class="js-signin-modal-trigger" data-signin="login">
+            <button type="button" class="btn card-btn add-comment-btn btn-info" disabled>
+              Add Comment
+            </button>
+          </span>
+        
+        {{!-- Add a button that is disabled and has a popover that says to login --}}
+        {{/if}}
+        </div>
+      </div>
+          <button type="button" class="btn card-btn show-comment-btn btn-info">
+      View Comments
+    </button>
+    </div>
+
+  </div>
+</div>
+{{/each}}
