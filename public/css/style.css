@@ -1,0 +1,174 @@
+:root {
+    /* Dark Color variables */
+    --navbar-background-dark: #2f2f2f;
+    --navbar-text-dark: #e7e9f0;
+    --button-background-dark: #30D2F2;
+    --button-text-dark: #ffffff;
+    --button-border-dark: #26adc8;
+    --footer-background-dark: #2f2f2f00;
+    --footer-text-dark: #e7e9f0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  
+  }
+  
+  body {
+    position: relative;
+    background-color: #2E2E2E;
+    background-image: url(../images/backgrounds/large-triangles.svg);
+    background-attachment: fixed;
+    background-size: 300px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+  
+  }
+  
+  .navbar {
+    background-color: var(--navbar-background-dark);
+  }
+  
+  /* Changes the website name font in the navbar, centers it */
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    margin-right: 0px;
+    text-align: center;
+    font-feature-settings: "salt" 1, "ss01" 1;
+    font-size: 1.8rem;
+    color: var(--navbar-text-dark);
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+    padding-right: 1rem;
+  }
+  
+  /* Sets size of ALL navbar icons */
+  .navIcon {
+    margin: 0px;
+    font-size: 1.5rem;
+  }
+  
+  #user-username{
+    width: fit-content !important;
+    color: var(--navbar-text-dark);
+    white-space: nowrap;
+    margin: auto;
+  }
+  
+  .form-check-input:checked {
+    background-color: #6f6fab;
+    border-color: transparent;
+  }
+  
+  /* Overriding Bootstrap, targets both login and sign up in the navbar */
+  .login-nav-Btn {
+    margin-right: 0.5rem;
+    width: 6rem;
+    border-width: 1.3px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    background: var(--navbar-background-dark);
+    border-color: var(--button-border-dark);
+  }
+  
+  .login-nav-Btn:hover {
+    background: var(--button-background-dark);
+    color: var(--button-text-dark);
+  }
+  
+  .container {
+    margin-left: auto;
+  }
+  
+  /* helps with centering the website name on bigger monitors */
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  
+  footer {
+    margin-top: 2rem;
+    background-color: var(--footer-background-dark) !important;
+    color: var(--footer-text-dark) !important;
+    justify-content: end;
+  }
+  
+  /* Brings footer links closer together */
+  footer p {
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Removes footer links underline */
+  footer a {
+    text-decoration: none;
+  }
+  
+  /* Adds footer links underline when hovering */
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Gem icon next to website name in footer, 
+  makes it smaller and pushes text right */
+  .footer-gem {
+    padding-right: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* github icon next to contact in footer, 
+  pushes text right */
+  .footer-contact-github {
+    padding-right: 0.2rem;
+  }
+  
+  #git-icon {
+    display: block;
+    transition: transform 0.5s ease-out;
+  }
+  
+  #git-icon:hover {
+    transform: rotate(360deg);
+  }
+  
+  .d-block {
+    display: block;
+  }
+  
+  @media (max-width: 791px) {
+    .navbar-brand {
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  /* Hover.css */
+  /* * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+   * Version: 2.3.2
+   * Author: Ian Lunn @IanLunn
+   * Author URL: http://ianlunn.co.uk/
+   * Github: https://github.com/IanLunn/Hover */
+  
+  /* Grow */
+  .hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+  
+  .hvr-grow:hover,
+  .hvr-grow:focus,
+  .hvr-grow:active {
+    transform: scale(1.05);
+  }
