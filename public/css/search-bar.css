@@ -1,11 +1,11 @@
 .search-bar {
-    width: 15rem;
-  }
- 
- .bi-search {
-    color: var(--discovery-page-text-dark);
-  }
- 
-  #search-input {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
-  }
+   width: 15rem;
+ }
+
+.bi-search {
+   color: var(--discovery-page-text-dark);
+ }
+
+ #search-input {
+   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+ }
