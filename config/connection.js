@@ -11,7 +11,7 @@ if (process.env.JAWSDB_URL) {
     process.env.DB_USER,
     process.env.DB_PASSWORD,
     {
-      host: "https://techtechblog-90c849bea5c5.herokuapp.com/",
+      host: "localhost",
       dialect: "mysql",
       dialectOptions: {
         decimalNumbers: true,
