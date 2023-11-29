@@ -17,7 +17,7 @@ app.set("views", __dirname + "/views");
 
 // Set up sessions with cookies
 app.use(session({
-  secret: process.env.SECRET,
+  secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
