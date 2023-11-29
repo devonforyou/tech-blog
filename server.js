@@ -5,6 +5,7 @@ const routes = require("./controllers");
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const { extendDefaultFields } = require("./models/Session");
+const path = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -16,7 +17,7 @@ app.set("views", __dirname + "/views");
 
 // Set up sessions with cookies
 app.use(session({
-  secret: qwertyuiop,
+  secret: process.env.SECRET,
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
