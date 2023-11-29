@@ -12,8 +12,8 @@ The homepage displays all of the blog posts that have been created. If the user 
 The dashboard displays all of the posts that have been created by the logged in user. The user can click on any of the posts to edit or delete them. The user can also create a new post by clicking on the "New Post" button.
 
 ## Credits
-Kim for helping debug https://github.com/charmingdarling
-Clarice for helping debug https://github.com/Clkwong3
+- Kim for helping debug https://github.com/charmingdarling
+- Clarice for helping debug https://github.com/Clkwong3
 
 ## License
 This project is open source and available under the [MIT](./LICENSE)
