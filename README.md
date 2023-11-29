@@ -13,6 +13,7 @@ The dashboard displays all of the posts that have been created by the logged in 
 
 ## Credits
 Kim for helping debug https://github.com/charmingdarling
+Clarice for helping debug https://github.com/Clkwong3
 
 ## License
 This project is open source and available under the [MIT](./LICENSE)
